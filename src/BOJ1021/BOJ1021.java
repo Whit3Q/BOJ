@@ -83,7 +83,7 @@ public class BOJ1021 {
         }
 
         public int find(int num) {
-           return queue.indexOf(num);
+            return queue.indexOf(num);
         }
 
         public int size() {
