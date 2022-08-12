@@ -15,6 +15,7 @@ public class BOJ1822_1 {
     static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
     static StringTokenizer st;
     static StringTokenizer st2;
+    static StringBuilder sb = new StringBuilder();
     static int N;
     static int M;
 
@@ -42,11 +43,14 @@ public class BOJ1822_1 {
             }
         }
 
-        bw.write(result+"\n");
         Collections.sort(arr);
-        for(int num : arr) {
-            bw.write(num + " ");
+        sb.append(arr.size()).append("\n");
+
+        for (int idx : arr) {
+            sb.append(idx).append(" ");
         }
+
+        bw.write(sb.toString());
         bw.flush();
         bw.close();
     }
